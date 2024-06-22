@@ -18,7 +18,7 @@ const port = 8080;
 const server = http.createServer((req, res) => {
   // adding port information to the response
   res.writeHead(200, { 'Content-Type': 'text/plain' });
-  res.end(`Hello, GeeksforGeeks! Server is running on port ${port}`);
+  res.end(`Hello Server is running on port ${port}`);
 });
 server.listen(port, () => {
   console.log(`Server is running on port ${port}`);
